@@ -1,0 +1,59 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .app input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Styles for the Filters component */
+  .Filters {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid layout for user cards */
+  .Ucard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .app {
+      padding: 10px;
+    }
+  
+    .app  input[type="text"] {
+      max-width: 100%;
+      padding: 8px;
+    }
+  
+    .Filters {
+      max-width: 100%;
+    }
+  
+    .Ucard {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+ .app   input[type="text"] {
+      font-size: 14px;
+      padding: 6px;
+    }
+  }
+  

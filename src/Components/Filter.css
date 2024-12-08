@@ -1,0 +1,62 @@
+.filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .filter div {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .filter select,.filter input[type="checkbox"],.filter button {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .filter button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .filter button:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 768px) {
+    .filter {
+      padding: 8px;
+    }
+  
+    .filter  select,.filter input[type="checkbox"], .filter button {
+      padding: 8px;
+    }
+  
+ .filter button {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+  .filter  select, .filter input[type="checkbox"],.filter button {
+      padding: 6px;
+    }
+  
+  .filter  button {
+      font-size: 12px;
+    }
+  }
+  .filter label{
+    padding:12px;
+    width:40px;
+      display: flex;
+      gap:19px;
+  }
+  
